@@ -1,0 +1,128 @@
+body {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.configure-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.configure-input > input {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.configure-input > label {
+    font-size: 1.5rem;
+}
+
+.configure-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: #111;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main-btns:hover {
+    background-color: #222;
+    border: 1px solid #222;
+}
+
+.house {
+    height: 100%;
+    margin-top: 4rem;
+    width: 80%;
+    position: relative;
+}
+
+.floor-container {
+    height: 100%;
+    width: 100%;
+    border-bottom: 8px solid white;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.floor {
+    height: 200px;
+    width: 100%;
+    border-bottom: 8px solid white;
+    background-color: #111;
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+    justify-content: left;
+    align-items: center;
+}
+
+.floor-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: #111;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.floor-number {
+    display: flex;
+    flex-direction: column;
+}
+
+.floor-btn:hover {
+    background-color: #222;
+}
+
+.lift-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 10rem;
+}
+
+.hide-button {
+    display: none;
+}
+
+.lift {
+    height: 80px;
+    width: 40px;
+    background-color: gray;
+    border-radius: 1rem;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 0;
+}
+
+

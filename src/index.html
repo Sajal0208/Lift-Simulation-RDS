@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lift Simulator</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>
+            Lift Simulation
+        </h1>
+        <div class = "configure-container">
+            <div class="configure-input">
+                <label for="floors">Floors</label>
+                <input id="floors" min="1" name="floors" type="number"/>
+            </div>
+            <button id="start-btn" class="main-btns">
+                Let's Go
+            </button>
+            <button id="reset-btn" class="main-btns">
+                Reset
+            </button>
+            <div class="configure-input">
+                <label for="lifts">Lifts</label>
+                <input type="number" min="1" id="lifts" name="lifts" />
+            </div>
+        </div>
+    </div>
+    <div class="house">
+        <h1>
+            House
+        </h1>
+        <div id="floors-container">
+            <!-- <div class="floor">
+                <div class="floor-number">
+                    <button class="floor-btn">
+                        ⬆️
+                    </button>
+                    <h2>
+                        Floor 1
+                    </h2>
+                    <button class="floor-btn">
+                        ⬇️
+                    </button>
+                </div>
+            </div> -->
+        </div>
+        <div class="lift-container">
+            <!-- <div class="lift" /> -->
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
