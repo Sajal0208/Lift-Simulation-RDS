@@ -125,7 +125,7 @@ const createFloors = function (floors) {
 
         // Setting up the Up Button
         let upBtn = document.createElement("button");
-        upBtn.classList.add("btn");
+        upBtn.classList.add("floor-btn");
         upBtn.innerText = "⬆️";
         upBtn.addEventListener("click", (e) => {
             moveLift(e);
@@ -143,7 +143,7 @@ const createFloors = function (floors) {
 
         // Setting up the Down Button
         let downBtn = document.createElement("button");
-        downBtn.classList.add("btn");
+        downBtn.classList.add("floor-btn");
         downBtn.innerText = "⬇️";
         downBtn.addEventListener("click", (e) => {
             moveLift(e);
@@ -161,6 +161,23 @@ const createFloors = function (floors) {
 
 
 const createLifts = function (lifts) {
+    let container = document.getElementById("floors-container");
+    let containerChildNodes = container.childNodes;
+    let containerChildNodesLength = containerChildNodes.length;
+    let firstFloor  = containerChildNodes[containerChildNodesLength - 1];
+    let leftSpace = 30;
+    let bottomSpace = 10;
+    let liftSpacing = 150;
+    let distanceFromLeft = 10;
+    let liftWidth = 40;
 
-
+    for(let i=0; i<lifts; i++) {
+        let liftElement = document.createElement("div");
+        liftElement.classList.add("lift");
+        liftElement.id = `lift-${i + 1}`;
+        liftElement.style.left = leftSpace + distanceFromLeft + liftSpacing + "px";
+        distanceFromLeft = distanceFromLeft + liftWidth + liftSpacing;
+        liftElement.style.bottom = bottomSpace + "px";
+        firstFloor.appendChild(liftElement);
+    }
 }
